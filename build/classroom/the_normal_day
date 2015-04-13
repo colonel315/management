@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title> The Normal Day </title>
+        <script src="/static/bower_components/jquery/jquery.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css"
+              href="/static/bootstrap-3.3.2-dist/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css"
+              href="/static/bootstrap-3.3.2-dist/css/bootstrap-theme.css"/>
+        <script src="/static/bootstrap-3.3.2-dist/js/bootstrap.min.js"
+                type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="/static/styles.css"/>
+        
+        
+    </head>
+    <body id="top" data-spy="scroll" data-target="#scrollspy">
+        <nav id="myNavBar" class="navbar nav-pills" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Welcome to Class</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/classroom">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Day Numero Uno<b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/classroom/day_numero_uno/what_to_expect"> What to Expect </a></li>
+                                <li><a href="/classroom/day_numero_uno/jobs">Jobs</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">General Day<b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/classroom/the_normal_day">The Normal Day</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="/classroom/expectations">Expectations</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Classroom Management<b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/classroom/classroom_management/class-yes">Class-Yes</a></li>
+                                <li><a href="/classroom/classroom_management/hey_everybody">Hey Everybody!</a></li>
+                                <li><a href="/classroom/classroom_management/ask_permssion">Asking Permission</a></li>
+                                <li><a href="/classroom/classroom_management/transition">Transitioning</a></li>
+                                <li><a href="/classroom/classroom_management/ask_for_help">Asking for Help</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/classroom/centers">Centers</a></li>
+                        <li><a href="/classroom/student_teacher_relationship">Student Teacher Relationship</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <h1 class="h1 jumbotron">How the Normal Day Looks</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-9 col-md-9 text-center" role="main">
+                    
+        <h2 class="h2">Start of the Day</h2>
+        <hr class="subtitle"/>
+        <div class="item">When students come in they will take the chairs at their seats down.</div>
+
+        <h2 class="h2" id="start-class">Start of Class</h2>
+        <hr class="subtitle"/>
+
+        <h4 class="h4" id="greeting">The Greeting</h4>
+        <hr class="subsubtitle"/>
+        <div class="list-group">
+            <li class="item">I will be standing in front of my door, ready to great you with a smile and saying "Welcome
+                Back! Go
+                ahead to your desk and get started on your Brain Sweat activity." I only do this because you may be
+                having an off day and you just need a little bit of reminding on the procedures.
+            </li>
+            <li class="item">If there was any homework the night before, I will also remind you to go ahead and put it
+                on your desk so that way my collector can go around and pick up your homework and place
+                it inside of the "I Did Stuff at Home" tray.
+            </li>
+            <li class="last-item">If you had to get something signed (field trip form, parent notes, etc.) you can put
+                it in the "Nitty Gritty" tray and I'll
+                remind you of that too as you walk in. This will be at the corner of my desk. Next to this
+                will be some envelopes and I will kindly ask you to put your forms or field trip money in
+                there with your name on top of it please. I would hate to either lose something, or someone
+                getting into your privacy.
+            </li>
+        </div>
+
+        <h4 class="h4" id="inside">Your inside: Now What!?</h4>
+        <hr class="subsubtitle"/>
+        <div class="list-group">
+            <li class="item">Every day there will be a different genre of music playing inside of the classroom. I
+                will always try my best to keep the music upbeat. I do this because, again, I want my classroom
+                to have a positive feel inside of it.
+            </li>
+            <li class="item">When you are in the room, if you are allowed to have a backpack, go ahead and take out
+                your need materials for the day and place them under your desk or chair. I would hate for
+                someone to trip over your backpack or for your backpack to break from someone stepping on it.
+            </li>
+            <li class="item">If you have a coat on you can hang your coat on the back of your chair or ask permission to
+                put it
+                in your locker for the same reasoning as it is for the backpacks.
+            </li>
+            <li class="last-item">When you have your materials out, coat on the back of the chair, backpack underneath
+                your desk or chair, you can get started on the
+                <a href="#" class="link" title="Learn about Brain Sweat!">Brain Sweat</a>/warm up activity activity.
+            </li>
+        </div>
+
+        <h4 class="h4" id="attendance">Attendance</h4>
+        <hr class="subsubtitle"/>
+        <div class="list-group">
+            <div class="last-item">There will be a <a href="#" class="link">job</a> for a student to take attendance for
+                me.
+            </div>
+        </div>
+
+        <div class="h4" id="what-I-do">What Will the Teach be Doing While Your Brain Sweats?</div>
+        <hr class="subsubtitle"/>
+        <div class="list-group">
+            <li class="item">I will be doing some administration stuff for the office</li>
+            <li class="item">Collecting the envelopes that are inside my "Nitty Gritty" tray.</li>
+            <li class="last-item">Collect the Homework out of folders</li>
+        </div>
+
+        <div class="h4" id="after-brain-sweat">After <a href="#" class="link" title="Learn about Brain Sweat!">Brain
+            Sweat</a></div>
+        <hr class="subsubtitle"/>
+        <div class="list-group">
+            <li class="item">I will go over that days Brain Sweat with you so you know how to do it and will allow
+                for any questions you may have about it. I don't want to leave any student confused about
+                what is going on.
+            </li>
+            <li class="item">When we go over it I will ask a student to talk about or maybe even demonstrate they
+                got their answer or what the answer is, but when you do this I will have you stand up.
+                I want each of my wonderful students to be comfortable speaking in front of people and for
+                each of my students to respect a speaker by listening quietly.
+            </li>
+            <li class="item">Once we go over the Brain Sweat I will talk to you about what we are doing that day and
+                provide you with the needed materials for the day. I will brief you on it so that way you
+                know what is going on that day instead of staring at me with blank eyes thinking "whaaaaa?"
+            </li>
+            <li class="last-item">While you are on task and working on your assignment I will be walking around to
+                answer
+                any questions, listen to conversations, and pushing you to take your conversations even deeper.
+            </li>
+        </div>
+
+        <div class="h2" id="ending-class">Ending the Class</div>
+        <hr class="subtitle"/>
+        <div class="list-group">
+            <li class="item">At the last 5 or ten minutes of class I will assign any homework if there is any.</li>
+            <li class="item">I will also have an exit slip prepared for you. I will not let you leave until you have
+                finished the exit slip. I do this because I want to make sure you understood what we did
+                that day. I would hate for my brilliant student to fall behiind!
+            </li>
+            <li class="item">You may be wondering, what about my assignment I just did! How do I turn that in?
+                Well there will be a <a href="#" class="link" title="Click to look at jobs">job</a> for that too!
+                The collector will pick up the papers and put them in the "I Did Stuff in Class" tray.
+            </li>
+            <li class="last-item">During this time the janitor should be going through and cleaning up desk areas,
+                and sweeping where it is messy. After all a clean environment is a happy one!
+            </li>
+        </div>
+
+        <div class="h2" id="ending-day">Ending the Day</div>
+        <hr class="subtitle"/>
+        <div class="list-group">
+            <li class="item">You will put the chairs up on your desk once you finish and turn in the exit slip.</li>
+            <li class="last-item">I will be standing in front of the door, waiting for the final bell and I will let you
+                out once the room is an the appropriate condition.
+            </li>
+        </div>
+    
+                </div>
+                <div class="col-sm-3 col-md-3" role="complementary" id="scrollspy">
+                    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix">
+                        <ul class="nav bs-docs-sidenav">
+                            <li><a href="#top" class="sidenav">Top O' Page</a></li>
+                            
+        <li>
+            <a href="#start-class" class="sidenav">Start of Class</a>
+            <ul class="nav">
+                <li><a href="#greeting" class="child-sidenav">Greeting</a></li>
+                <li><a href="#inside" class="child-sidenav">Now Your Inside</a></li>
+                <li><a href="#attendance" class="child-sidenav">Attendance</a></li>
+                <li><a href="#what-I-do" class="child-sidenav">What Teach Does During Brain Sweat</a></li>
+                <li><a href="#after-brain-sweat" class="child-sidenav">After Brain Sweat</a></li>
+            </ul>
+        </li>
+        <li><a href="#ending-class" class="sidenav">Ending the Class</a></li>
+        <li><a href="#ending-day" class="sidenav">Ending the Day</a></li>
+    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+{% extends 'layout_with_side_nav.html' %}
+
+{% block header %}Consequences{% endblock %}
+
+{% block title %}Consequences{% endblock %}
+
+{% block main %}
+    <h2 class="h2" id="positive">Positive Side - WHAT IS UUUUP!</h2>
+    <hr class="subtitle"/>
+    <h4 class="h4">What is it?</h4>
+    <hr class="subsubtitle"/>
+    <div class="list-group">
+        <li class="item">Sometimes you will do something GREAT or FANTASTIC but no one notices it or you don't know
+                            that you did something amazing. Well I will try my darnest to recognize the great things you
+                            do by giving you some... wait for it... BONUS MONEY! WOOOOOO!</li>
+         <li class="last-item">Along with that extra money in your pocket you will also get a choice of things awesome
+                            things: <br/>
+                            1. Positive note home <br/>
+                            2. Positive call home <br/>
+                            3. A page dedicated to you on my website <br/>
+                            4. Can buy a ticket that will allow you to take your shoes off in class, or some reading time
+                            class, etc.
+                            Once you build up enough money you can even <a href="{{ url_for('how_eco_works') }}">buy out
+                            your desk.</a></li>
+    </div>
+
+    <h4 class="h4">The Pay Bonus</h4>
+    <hr class="subsubtitle"/>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>The amazing thing</th>
+                <th>What you get</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            	<td>100% on any test</td>
+            	<td>$50</td>
+            </tr>
+            <tr>
+            	<td>Joining school extra-curricular</td>
+            	<td>$100</td>
+            </tr>
+            <tr>
+            	<td>Compliment by another teacher: $200</td>
+            	<td>$50</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="h2" id="negative">Negative Side - BLEH</h2>
+    <hr class="subtitle"/>
+    <h4 class="h4">What is it?</h4>
+    <hr class="subsubtitle"/>
+    <div class="list-group">
+        <li class="last-item">If you break any of the guidelines in any way there will be money taken from you. You will
+                            also be handed a little slip of paper that says <a href="#">"wha' ha-happened was"</a> at the
+                            top of it and what you were doing. You will sign it and be asked to meet me after class.</li>
+    </div>
+
+    <h4 class="h4">The Pay Penalty</h4>
+    <hr class="subsubtitle"/>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Guideline Broken</th>
+                <th>What happened</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rule 3: Do them moves to get up</td>
+                <td>Getting up without permission</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Rule 2: Be responsible</td>
+                <td>Missing homework</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Rule 2: Be responsible</td>
+                <td>Tardy</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Rule 1: Respect Everyone</td>
+                <td>Rudeness</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Rule 2: Be responsible</td>
+                <td>Messy desk</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Rule 1: Respect Everyone</td>
+                <td>Dishonesty</td>
+                <td>$500</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
+
+{% block sidenav %}
+    <li><a href="#positive" class="sidenav">Positive Consequences</a></li>
+    <li><a href="#negative" class="sidenav">Negative Consequences</a></li>
+{% endblock %}

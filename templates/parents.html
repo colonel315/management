@@ -1,0 +1,30 @@
+{% extends 'layout_without_side_nav.html' %}
+
+{% block title %} Sharing Behavior with Parents {% endblock %}
+
+{% block header %} Sharing Behavior with Parents {% endblock %}
+
+{% block main %}
+     <h2 class="h2">When Will Parents Be Notified</h2>
+     <hr class="subtitle"/>
+     <div class="list-group">
+        <li class="last-item">Parents will be notified by email or phone call, which will be logged in the positive or negative
+                        binder depending on the behavior.</li>
+     </div>
+
+     <h2 class="h2">How Often Will Parents Be notified.</h2>
+     <hr class="subtitle"/>
+     <div class="list-group">
+        <li class="last-item">Parents will be notified at least two to three times a week of their child's behavior.</li>
+     </div>
+
+     <h2 class="h2">How Will Parents Know About What is Going On in Classroom</h2>
+     <hr class="subtitle"/>
+     <div class="list-group">
+        <li class="item">One way parents can be notified is by the calendar on the
+                        <a href="{{ url_for('index') }}">home page</a></li>
+        <li class="last-item">I will also send an email that will include a calendar with a greeting that will say: <br/>
+                            "Hello, this week your wonderful students are going to be doing (list stuff). These activities
+                            have been planned to help your students succeed to their highest potential."</li>
+     </div>
+{% endblock %}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title> Centers </title>
+        <script src="/static/bower_components/jquery/jquery.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css"
+              href="/static/bootstrap-3.3.2-dist/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css"
+              href="/static/bootstrap-3.3.2-dist/css/bootstrap-theme.css"/>
+        <script src="/static/bootstrap-3.3.2-dist/js/bootstrap.min.js"
+                type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="/static/styles.css"/>
+        
+        
+    </head>
+    <body id="top" data-spy="scroll" data-target="#scrollspy">
+        <nav id="myNavBar" class="navbar nav-pills" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Welcome to Class</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/classroom">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Day Numero Uno<b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/classroom/day_numero_uno/what_to_expect"> What to Expect </a></li>
+                                <li><a href="/classroom/day_numero_uno/jobs">Jobs</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">General Day<b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/classroom/the_normal_day">The Normal Day</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="/classroom/expectations">Expectations</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Classroom Management<b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/classroom/classroom_management/class-yes">Class-Yes</a></li>
+                                <li><a href="/classroom/classroom_management/hey_everybody">Hey Everybody!</a></li>
+                                <li><a href="/classroom/classroom_management/ask_permssion">Asking Permission</a></li>
+                                <li><a href="/classroom/classroom_management/transition">Transitioning</a></li>
+                                <li><a href="/classroom/classroom_management/ask_for_help">Asking for Help</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/classroom/centers">Centers</a></li>
+                        <li><a href="/classroom/student_teacher_relationship">Student Teacher Relationship</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <h1 class="h1 jumbotron"> Centers </h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-9 col-md-9 text-center" role="main">
+                    
+    <h2 class="h2" id="about">What are Centers?</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="last-item">Centers are an interactive way for you to learn pieces of information on a particular
+                        topic and normally have learning materials to help enhance the education a you will receive.</div>
+    </div>
+
+    <h2 class="h2" id="rotation">Center Rotations</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="last-item">You will rotate in a clockwise pattern, this way it is consistent and as little confusion
+                        as possible for you. I do this just so that way every transition can be as smooth as possible.</div>
+        <img src="/static/img/center_rotation.png" />
+    </div>
+
+    <h2 class="h2" id="time">How Long Will I Be in a Center?</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="last-item">Since we have about 75 minutes per class we will have about 24 minutes per center so that way
+                        we have about 5 minutes left at the end of class to clean up and do our exit slip.</div>
+    </div>
+
+    <h2 class="h2" id="next">How Do I Know Where to Go Next?</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="last-item">So now you know how long you will be there, the rotation pattern of centers, well what if you
+                        forget? Well let us just say there will be arrows on the ground to remind you what direction
+                        to go. Also on each desk there will be a table that tells you the order to go.</div>
+        <table class="table table-bordered table-striped">
+            <tbody>
+                <tr>
+                    <td>Rotation 1</td>
+                    <td>Rotation 2</td>
+                    <td>Rotation 3</td>
+                    <td>Rotation 4</td>
+                    <td>Rotation 5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="h2">How Do I Know When to Leave my Center?</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="item">On the projector there will be a timer that will go off whenever it is time to rotate groups.</div>
+    </div>
+
+                </div>
+                <div class="col-sm-3 col-md-3" role="complementary" id="scrollspy">
+                    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix">
+                        <ul class="nav bs-docs-sidenav">
+                            <li><a href="#top" class="sidenav">Top O' Page</a></li>
+                            
+    <li><a href="#about" class="sidenav">What are Centers</a></li>
+    <li><a href="#rotation" class="sidenav">Center Rotations</a></li>
+    <li><a href="#time" class="sidenav">How Long?</a></li>
+    <li><a href="#next" class="sidenav">Where Do I Go Next?</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

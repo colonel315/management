@@ -1,0 +1,164 @@
+body {
+    background-color: #fefefe;
+}
+
+.navbar {
+    background: #1c5f83;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    font-size: small;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fefefe;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {
+    color: #fefefe;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #333;
+}
+
+.nav-list li a {
+    color: #5cbddd;
+}
+
+.nav-list li:hover a {
+    color: #fefefe;
+    background: #1c5f83;
+}
+
+ul.nav > li > ul.nav {
+    display: none;
+}
+
+ul.nav > li.active > ul.nav {
+    display: block;
+}
+
+ul.nav > li.active > a, ul.nav > li.active > a {
+    color: #fefefe;
+    background: #1c5f83;
+    border-left: 6px solid #5cbddd;
+}
+
+.dropdown-menu > li > a {
+    padding-top: 2px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    background-color: #5cbddd;
+}
+
+.affix {
+    top: 20px;
+    width: 190px;
+}
+
+.affix-top {
+    width: 190px;
+}
+
+.h2 {
+    color: #1c5f83;
+}
+
+.h4 {
+    color: #7ebea5;
+}
+
+.h2, .h4 {
+    margin-top: 50px;
+}
+
+.jumbotron {
+    background-color: #1c5f83;
+    color: #fefefe;
+}
+
+.page-header {
+    border-bottom: 5px solid #eee
+}
+
+.table-striped > thead > tr:first-child {
+    background-color: #fefefe;
+    /*color: #000000;*/
+    font-size: initial;
+}
+
+.table-striped > tbody > tr:nth-last-of-type(odd) {
+    color: #1c5f83;
+    background-color: #fefefe;
+    font-size: initial;
+}
+
+.table-striped > tbody > tr:nth-last-of-type(even) {
+    color: #fefefe;
+    background-color: #1c5f83;
+    font-size: initial;
+}
+
+.subtitle {
+    width: 500px;
+    border-bottom: 2px solid #eee
+}
+
+.subsubtitle {
+    width: 400px;
+    border-bottom: 1px solid #eee;
+}
+
+.list-group {
+    border-radius: 50px;
+    box-shadow: 40px 20px 13px rgba(0, 0, 0, 0.075);
+}
+
+.sidenav {
+    color: #1c5f83;
+    box-shadow: 10px 0px 13px rgba(0, 0, 0, 0.075);
+    background-color: #fefefe;
+    font-size: small;
+}
+
+.child-sidenav {
+    color: #7ebea5;
+    box-shadow: 10px 0px 13px rgba(0, 0, 0, 0.075);
+    background-color: #fefefe;
+    left: 30px;
+    font-size: small;
+}
+
+.sidenav:hover {
+    border-left: 1px solid #1c5f83;
+}
+
+.child-sidenav:hover {
+    border-left: 1px solid #7ebea5;
+    color: #7ebea5;
+}
+
+.long {
+    width: 245px;
+}
+
+.link {
+    color: #1c5f83;
+}
+
+.item {
+    margin-bottom: inherit;
+}
+
+.last-item {
+    margin-bottom: 33px;
+}
+
+.span9 {
+    width: 870px;
+}
+
+.span3 {
+    width: 270px;
+}

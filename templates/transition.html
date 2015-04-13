@@ -1,0 +1,55 @@
+{% extends 'layout_with_side_nav.html' %}
+
+{% block title %} Transitions {% endblock %}
+
+{% block header %} Transitions {% endblock %}
+
+{% block main %}
+    <h2 class="h2" id="lunch">Lunch Transition</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <li class="item">Put away your materials.</li>
+        <li class="item">Grab your lunch box/bag/money if you have it.</li>
+        <li class="item">Line up in front of the door.</li>
+        <li class="item">Wait for me to say go ahead.</li>
+        <li class="item">Once I tell you to go ahead you will walk down the hallway respectfully to other classes toward
+                        the lunch room.</li>
+        <li class="last-item">I will lock the door behind you all so that way you know your things are safe.</li>
+    </div>
+
+    <h2 class="h2" id="after-lunch">After Lunch Transition</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <li class="item">I will take you back to the classroom once you are lined up in the cafeteria and your tables are
+                        clean.</li>
+        <li class="item">I will unlock the door so you can get our stuff so that you can go to your next class.</li>
+    </div>
+
+    <h2 class="h2" id="assembly">Assembly Transition</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <li class="item">Put materials inside of backpack.</li>
+        <li class="item">Grab your backpack.</li>
+        <li class="item">Line up in front of the door.</li>
+        <li class="item">Wait for me to tell you to go ahead.</li>
+        <li class="last-item">I will lock the door behind us.</li>
+    </div>
+
+    <h2 class="h2" id="emergency">Emergency Procedures</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <li class="item">No matter what I will always grab my student roster so that I know each of your lovely faces
+                        are safe.</li>
+        <li class="item">I will always guide you through what to do for the emergency procedures in a calm manner.
+                        Whether it is walk to our destination during a fire drill, or to curl up in a ball during a tornado
+                        drill.</li>
+        <li class="item">I will stay calm so that way you know that I am prepared and am ready for what is going on.</li>
+    </div>
+{% endblock %}
+
+{% block sidenav %}
+    <li><a href="#lunch" class="sidenav">Lunch</a></li>
+    <li><a href="#after-lunch" class="sidenav">After Lunch</a></li>
+    <li><a href="#assembly" class="sidenav">Assembly</a></li>
+    <li><a href="#emergency" class="sidenav">Emergency</a></li>
+{% endblock %}

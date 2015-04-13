@@ -1,0 +1,63 @@
+{% extends 'layout_with_side_nav.html' %}
+
+{% block title %} Asking Permission {% endblock %}
+
+{% block header %} Asking Permission {% endblock %}
+
+{% block main %}
+    <h2 class="h2" id="bathroom">Need to Go? Sign it!</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="last-item">If you need to use the restroom you are going to make the sign for bathroom. To do this you
+            will
+            place your thumb between your pointer and middle finger and then move our wrist left and right.
+            You can go when I sign <a href="#yes" class="link">yes.</a></div>
+        <img src="{{ url_for('static', filename='img/bathroom_sign.jpg') }}"/>
+    </div>
+
+    <h2 class="h2" id="water">Need Some Water? Sign it!</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="last-item">If you need to get a drink of water, it will be the same as bathroom, you are going to sign
+            it.
+            You do this by making a "W" with your pointer, middle, and ring finger then move it to and from
+            your mouth. You can go when I sign <a href="#yes" class="link">yes.</a></div>
+        <img src="{{ url_for('static', filename='img/sign_water.jpg') }}"/>
+    </div>
+
+    <h2 class="h2" id="pencil">Need to Sharpen a Dull Pencil? Raise it!</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="last-item">If you need to sharpen your pencil, raise your pencil in the air along with your other hand.
+            This way I can just look at you and know "Hey, you need to sharpen, go nuts." You can go when I
+            sign <a href="#yes" class="link">yes.</a></div>
+        <img src="{{ url_for('static', filename='img/pencil.jpg') }}"/>
+    </div>
+
+    <div class="h2" id="yes">How to Know You Can or Can't Go</div>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="last-item">To signal you that you can or can't go I will sign you either yes</div>
+        <img src="{{ url_for('static', filename='img/sign_yes.jpg') }}"/>
+
+        <div>or no.</div>
+        <img src="{{ url_for('static', filename='img/sign_no.png') }}"/>
+    </div>
+
+    <h2 class="h2" id="sign">Why I Use Sign?</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="last-item">I use sign language so that way I can give you a quick yes or no answer for these things. I
+            won't
+            have to walk across the room and you won't have to wait for me to walk across.
+        </div>
+    </div>
+{% endblock %}
+
+{% block sidenav %}
+    <li><a href="#bathroom" class="sidenav">Bathroom</a></li>
+    <li><a href="#water" class="sidenav">Water</a></li>
+    <li><a href="#pencil" class="sidenav">Pencil</a></li>
+    <li><a href="#yes" class="sidenav">Can I Do It?</a></li>
+    <li><a href="#sign" class="sidenav">Why Use Sign?</a></li>
+{% endblock %}

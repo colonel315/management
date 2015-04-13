@@ -1,0 +1,89 @@
+{# Do self introduction (own section) and what happens if you enter room loud (part of greeting) #}
+
+{% extends 'layout_with_side_nav.html' %}
+
+{% block title %} What to Expect {% endblock %}
+
+{% block link %}{% endblock %}
+
+{% block script %}{% endblock %}
+
+{% block header %} What to Expect on Day One {% endblock %}
+
+{% block main %}
+    <h2 class="h2" id="class-setup">Once Your Inside</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <li class="item">Before being inside, you may here some happy music, that music would be
+            “Somewhere Over the Rainbow/It’s a Wonderful World” by Israel “IZ” Kamakawiwo’ole. I do this so that
+            you know that it is a positive, safe environment.
+        </li>
+        <li class="item">On the whiteboard my room number, my name, and the room number, so you know you are in the
+            right classroom.
+        </li>
+        <li>One every desk there will be a folded card with a number on it, say hello to your new seat. So you
+            don't have to wait and wonder "Do I have a friend in this class?" You can just go to your seat!
+        </li>
+        <img src="{{ url_for('static', filename='img/folded_card.jpg') }}"/>
+    </div>
+
+    <h2 class="h2" id="greeting">The Greetings I Give</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <li class="item">Expect a large smile from me for I am <b> thrilled </b> to have you in my classroom.</li>
+        <li class="item">Expect me to shake your hand, call you by name, and tell you "Welcome to Mr. Burr's
+            (enter subject) class, room (room number). It is such a pleasure to have you. Also if you happened to find
+            the wrong room
+            at least you know before you enter. It was a pleasure to meet you.
+        </li>
+        <li class="item">You will be handed a piece of paper with a number on it. This will be your assigned seat.</li>
+        <li>If I notice that you enter the room loudly or go to the wrong seat I will come up to you and kindly
+            ask you to come back up to the door and say, "Please walk back inside quietly and go to the seat with
+            your number on it." I only do this because some students may get flustered by how loud you are. I want
+            everyone to feel safe and relaxed in my class.
+        </li>
+    </div>
+
+    <h2 class="h2" id="introduction">The Introduction: DUH DUH DUUUUUUH</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <li class="item">When I introduce myself to you, I will be standing in front of everyone, not behind a table
+            or a desk, but to where everyone can see me so that way you know that I am open, I am not
+            here for you.
+        </li>
+        <li class="item">I will constantly be smiling in front of you so that way you <b>know</b> that I am excited
+            to have you here.
+        </li>
+        <li class="item">When I tell you of my <a href="#" class="link" title="Take a look at them!"> expectations </a>
+            for each and every
+            one of you, they will be positive. I want you to feel safe and welcomed inside of this class.
+        </li>
+        <li class="item">To help me explain my expectations I will have a power point prepared to go through with you.
+            There will also be hand motions so that way you aren't just listening to me droaning on but
+            you can get engaged in them too
+        </li>
+        <li class="item">I will also go through how I will like to <a href="#" class="link" title="Take a look!">
+            manage my classroom</a>. We will even practice these methods I have prepared for you!
+        </li>
+        <li class="item">Again for these expect a power point and some hand motions to help you remember them.</li>
+    </div>
+
+    <h2 class="h2" id="jobs">Jobs: What!? MADNESS!</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <li class="item">Inside of the classroom there will be jobs. Every student will have a job that they will be
+            responsible
+            for doing throughout class.
+        </li>
+        <li class="item">Every desk also has a cost of rent that you will pay with the money you make from your job</li>
+        <li>For more information check out the <a href="{{ url_for('jobs') }}" class="link" title="Click for jobs page">
+            jobs page </a></li>
+    </div>
+{% endblock %}
+
+{% block sidenav %}
+    <li><a href="#class-setup" class="sidenav">Class Setup</a></li>
+    <li><a href="#greeting" class="sidenav">Greetings From Mr. Burr</a></li>
+    <li><a href="#introduction" class="sidenav">Introduction</a></li>
+    <li><a href="#jobs" class="sidenav">Jobs: What?! MADNESS!</a></li>
+{% endblock %}

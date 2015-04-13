@@ -1,0 +1,52 @@
+{% extends 'layout_without_side_nav.html' %}
+
+{% block title %} Guidelines {% endblock %}
+
+{% block header %} Guidelines - DA DA DAAAAAAA {% endblock %}
+
+{% block main %}
+    <h2 class="h2" id="rule1">Rule 1: Respect Everyone</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+    	<li class="item">We will respect everyone because nobody wants to be disrespected. Nobody wants to get told
+    	                      anything hurtful.</li>
+    	<li class="last-item">We will practice this every day. Every period we will look left and right and give our neighbors
+    	                a compliment.</li>
+    </div>
+
+    <h2 class="h2" id="rule2">Rule 2: Be Responsible</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+    	<li class="item">We have to be responsible for our actions. Whether we are late, forget to do an assignment, or
+    	                even if we talk when we shouldn't be talking. In a job we are responsible for our actions. As a
+    	                students you are responsible for yours.</li>
+    	<li class="last-item">This will be practiced every day. Whether it is with classwork, homework, by being present,
+    	                    etc.</li>
+    </div>
+
+    <h2 class="h2" id="rule3">Rule 3: Do Them Motions to Get Up</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+    	<li class="item">We have procedures for a reason, they keep things running smoothly inside of the classroom.</li>
+    	<li class="item">As we get to a permission we will practice the motion.</li>
+    	<li class="last-item">Students will use motions daily. </li>
+    </div>
+
+    <h2 class="h2" id="rule4">Rule 4: Make Smart Choices</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+    	<li class="item">Every day we have to make choices, do I want pizza or donuts, water or soda? Sometimes though we
+    	                can make choices that matter that can be harmful or helpful to you or someone else. Think through
+    	                your options and choose which one seems most beneficial without any emotions persuading you.</li>
+    	<li class="last-item">We will sometimes have a <a href="{{ url_for('brain_sweat') }}">brain sweat</a> that
+    	                    will have a scenario where the student has to make a decision.</li>
+    </div>
+
+    <h2 class="h2">How Rules will be posted</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <li class="item">because Mr. Burr is a huge nerd and loves Tolkien, he wrote Lord of the Rings the rules will
+                        be posted inside of the ring of power.</li>
+        <img src="{{ url_for('static', filename='img/ring_of_power.png') }}" alt="Oops. Picture broke."/>
+    </div>
+{% endblock %}

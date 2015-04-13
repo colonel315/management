@@ -1,0 +1,39 @@
+{% extends 'layout_with_side_nav.html' %}
+
+{% block title %} Asking for Help {% endblock %}
+
+{% block main %}
+    <h2 class="h2" id="independent">Asking For Help With Independent Work</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <li class="item">Each of you lovely students will have a trifold that says on one side "Need me some help!" and
+                        on the other it will say "Keep working." So when you need help you will face the "Need me some help!
+                        side towards me, so that the "Keep Working" side is facing towards you. This is so that while you
+                        wait for help, you are reminded to move on and keep working while you wait. No need to stop and
+                        get a lesser grade when you can get a higher one if you continue on.</li>
+        <img src="{{ url_for('static', filename='img/help_sign.png') }}" />
+        <img src="{{ url_for('static', filename='img/help_sign_keep_working.png') }}" />
+    </div>
+
+    <h2 class="h2" id="centers">Asking For Help When at Centers</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <li class="item">Before you ask me, see if anybody else knows the answer.</li>
+        <li class="item">One person can raise their hand and continue to work on the next question. No need for the whole
+                        group to wait for one question.</li>
+    </div>
+
+    <h2 class="h2" id="cooperative">Asking For Help When Doing Cooperative Learning</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <li class="item">Same as centers, before you ask, try asking one of your partners. They may know the answer.</li>
+        <li class="item">One person can raise their hand and continue to work on the next question. No need for the whole
+                        group to wait for one question.</li>
+    </div>
+{% endblock %}
+
+{% block sidenav %}
+    <li><a href="#independent" class="sidenav">Independent Work Help</a></li>
+    <li><a href="#centers" class="sidenav">Center Work Help</a></li>
+    <li><a href="#cooperative" class="sidenav">Cooperative Work Help</a></li>
+{% endblock %}

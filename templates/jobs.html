@@ -1,0 +1,347 @@
+{# Money: dollas
+   Clerk
+   Attendance Monitor
+#}
+
+{% extends 'layout_with_side_nav.html' %}
+
+{% block title %} Jobs {% endblock %}
+
+{% block header %} Jobs {% endblock %}
+
+{% block main %}
+    <h2 class="h2" id="pay">How the Pay Scale Works</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <li class="item">Each jobs pay will have to do with how important the job is. A banker will get paid more
+            than most because that job holds much responsibility. A janitor will also get paid more because cleanliness
+            is highly important.
+        </li>
+        <li class="item">Your pay will be bi-weekly, meaning you will get paid every two weeks.</li>
+        <li class="last-item">Tax will be deducted from your paycheck. The classroom tax will be 5% of what you earned.
+                        To find how much you will REALLY make every two weeks here is an example of how to do it.
+                        <br/> 100*0.05 = 95. So take the amount you will make (100) times the tax amount (5% = 0.05). </li>
+    </div>
+
+    <h2 class="h2" id="janitor">Janitor</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <h4 class="h4" id="janitor-pay">Pay</h4>
+        <hr class="subsubtitle"/>
+        <li class="last-item">As a Janitor you will make about $650 per week before taxes. This group gets paid more
+                            because when I say clean I mean <b>CLEAN.</b> I expect the sink to be cleaned, cabinets wiped down,
+                            and floor swept.</li>
+
+        <h4 class="h4" id="janitor-description">Job Description</h4>
+        <hr class="subsubtitle"/>
+        <li class="last-item">You will be responsible for cleaning the room that class period so that way when the next
+                            class comes in the room is not messy, possibly causing someone to trip and hurt themselves.
+                            You will also be providing a clean environment, which in turns helps create a positive one.</li>
+
+        <h4 class="h4" id="janitor-skills">Skills Needed</h4>
+        <hr class="subsubtitle"/>
+        <li class="item">Hard working. You need time to clean, so you need to finish classwork to do your job.</li>
+        <li class="last-item">Creative. We may have a full class period of work, you need to find time to do your job. If you
+                        are walking near a sink, clean it then.</li>
+
+        <h4 class="h4" id="janitor-amount">How Many Are There?</h4>
+        <hr class="subsubtitle"/>
+        <li class="last-tem">There will be about 3 to 5 students in each class.</li>
+
+        <h4 class="h4" id="janitor-apply">How to Apply</h4>
+        <hr class="subsubtitle"/>
+        <div>To apply I need you to give me four things:</div>
+        <div class="item">1. An <a href="#" class="link" title="Click here to get the application"> application </a>
+        </div>
+        <div class="item">2. A <a href="#" class="link" title="Example of Cover Letter"> cover letter </a></div>
+        <div class="item">3. A <a href="#" class="link" title="Example of Resume"> resume </a></div>
+        <div class="last-item">4. A <a href="#" class="link" title="Letter of Recommendation">letter of recommendation</a>
+                        from someone who would know you cleanliness. (ex: parent)</div>
+    </div>
+
+    <h2 class="h2" id="banker">Banker</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <h4 class="h4" id="banker-pay">Pay</h4>
+        <hr class="subsubtitle"/>
+        <li class="last-item">As a Banker you will make $600 every week before tax.</li>
+
+        <h4 class="h4" id="banker-description">Job Description</h4>
+        <hr class="subsubtitle"/>
+        <li class="last-item">As a banker you will be responsible for handling everybody's money, so you need to be strong
+                            in math and be honest with your work.</li>
+
+        <h4 class="h4" id="banker-skills">Skills Needed</h4>
+        <hr class="subsubtitle"/>
+        <li class="item">Understanding of Numbers to Perform Math</li>
+        <li class="item">Organization for you will have a lot of other peoples records and other peoples money in
+                            your hands.</li>
+        <li class="last-item">Honest, needs to have a high amount of integrity.</li>
+
+        <h4 class="h4" id="banker-amount">How Many Are There?</h4>
+        <hr class="subsubtitle"/>
+        <li class="last-item">There will be about 2 - 3 bankers in each class. Each student will have about 10 students to keep
+                        track of.</li>
+
+        <h4 class="h4" id="banker-apply">How to Apply</h4>
+        <hr class="subsubtitle"/>
+        <div>To apply I need you to give me four things:</div>
+        <div class="item">1. An <a href="#" class="link" title="Click here to get the application"> application </a>
+        </div>
+        <div class="item">2. A <a href="#" class="link" title="Example of Cover Letter"> cover letter </a></div>
+        <div class="item">3. A <a href="#" class="link" title="Example of Resume"> resume </a></div>
+        <div class="last-item">4. A <a href="#" class="link" title="Letter of Recommendation">letter of recommendation</a>letter of recommendation from a math teacher.</div>
+    </div>
+
+    <h2 class="h2" id="recycler">Recycler</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <h4 class="h4" id="recycler-pay">Pay</h4>
+        <hr class="subsubtitle"/>
+    	<li class="last-item">As a Recycler you will get paid $550 a week. This job gets paid so much because recycling
+    	                    is very important. It helps protect our planet from land fills that can take multiple life
+    	                    times to decompose.</li>
+
+    	<h4 class="h4" id="recycler-description">Job Description</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">This job is responsible for making sure paper, plastic, and aluminum makes it to the recycling
+    	                    can. This may involve picking stuff out of the trash.</li>
+
+    	<h4 class="h4" id="recycler-skills">Skills Needed</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">Can get dirty.</li>
+
+    	<h4 class="h4" id="recycler-amount">How Many Are There</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">There will be 1 recycler for every class period.</li>
+
+    	<h4 class="h4" id="recycler-apply">How to Apply</h4>
+    	<hr class="subsubtitle"/>
+    	<div>To apply I need you to give me three things:</div>
+        <div class="item">1. An <a href="#" class="link" title="Click here to get the application"> application </a>
+        </div>
+        <div class="item">2. A <a href="#" class="link" title="Example of Cover Letter"> cover letter </a></div>
+        <div class="last-item">3. A <a href="#" class="link" title="Example of Resume"> resume </a></div>
+    </div>
+
+    <h2 class="h2" id="police">Police Officer</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <h4 class="h4" id="police-pay">Pay</h4>
+        <hr class="subsubtitle"/>
+    	<li class="last-item">As a Police Officer you will get paid $550 a week.</li>
+
+    	<h4 class="h4" id="police-description">Job Description</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">As a police officer you will keep record of anybody that is breaking the rules of the class
+    	                    room on a <a href="#" class="link" name="police record">police record sheet</a>. You need to
+    	                    be honest with what you report, no biased opinions or trying to get people in trouble on purpose.</li>
+
+    	<h4 class="h4" id="police-skills">Skills Needed</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="item">Honesty</li>
+    	<li class="last-item">Organized</li>
+
+    	<h4 class="h4" id="police-amount">How Many Are There</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">There will be 4 Police Officers for every class period.</li>
+
+    	<h4 class="h4" id="police-apply">How to Apply</h4>
+    	<hr class="subsubtitle"/>
+    	<div>To apply I need you to give me three things:</div>
+        <div class="item">1. An <a href="#" class="link" title="Click here to get the application"> application </a>
+        </div>
+        <div class="item">2. A <a href="#" class="link" title="Example of Cover Letter"> cover letter </a></div>
+        <div class="last-item">3. A <a href="#" class="link" title="Example of Resume"> resume </a></div>
+    </div>
+
+    <h2 class="h2" id="police">Messenger</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <h4 class="h4" id="police-pay">Pay</h4>
+        <hr class="subsubtitle"/>
+    	<li class="last-item">As a Messenger you will get paid $525 a week.</li>
+
+    	<h4 class="h4" id="police-description">Job Description</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">As a messenger you must know the office staff very well. You will be delivering messages to
+    	                    either the office or other classrooms. You can not disrupt a class when entering one.</li>
+
+    	<h4 class="h4" id="police-skills">Skills Needed</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">Communication</li>
+
+    	<h4 class="h4" id="police-amount">How Many Are There</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">There will be 2 Messengers for every class period.</li>
+
+    	<h4 class="h4" id="police-apply">How to Apply</h4>
+    	<hr class="subsubtitle"/>
+    	<div>To apply I need you to give me three things:</div>
+        <div class="item">1. An <a href="#" class="link" title="Click here to get the application"> application </a>
+        </div>
+        <div class="item">2. A <a href="#" class="link" title="Example of Cover Letter"> cover letter </a></div>
+        <div class="last-item">3. A <a href="#" class="link" title="Example of Resume"> resume </a></div>
+    </div>
+
+    <h2 class="h2" id="messenger">Messenger</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <h4 class="h4" id="messenger-pay">Pay</h4>
+        <hr class="subsubtitle"/>
+    	<li class="last-item">As a Messenger you will get paid $525 a week.</li>
+
+    	<h4 class="h4" id="messenger-description">Job Description</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">As a messenger you must know the office staff very well. You will be delivering messages to
+    	                    either the office or other classrooms. You can not disrupt a class when entering one.</li>
+
+    	<h4 class="h4" id="messenger-skills">Skills Needed</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">Communication</li>
+
+    	<h4 class="h4" id="messenger-amount">How Many Are There</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">There will be 2 Messengers for every class period.</li>
+
+    	<h4 class="h4" id="messenger-apply">How to Apply</h4>
+    	<hr class="subsubtitle"/>
+    	<div>To apply I need you to give me three things:</div>
+        <div class="item">1. An <a href="#" class="link" title="Click here to get the application"> application </a>
+        </div>
+        <div class="item">2. A <a href="#" class="link" title="Example of Cover Letter"> cover letter </a></div>
+        <div class="last-item">3. A <a href="#" class="link" title="Example of Resume"> resume </a></div>
+    </div>
+
+    <h2 class="h2" id="monitor">Attendance Monitor</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <h4 class="h4" id="monitor-pay">Pay</h4>
+        <hr class="subsubtitle"/>
+    	<li class="last-item">As a attendance monitor you will get paid $475 a week.</li>
+
+    	<h4 class="h4" id="monitor-description">Job Description</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">As a attendance monitor you must have outstanding attendance. Would stink if my attendance
+    	                    monitor was absent all the time.</li>
+
+    	<h4 class="h4" id="monitor-skills">Skills Needed</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">Always in class</li>
+
+    	<h4 class="h4" id="monitor-amount">How Many Are There</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">There will be 1 attendance monitor for every class period.</li>
+
+    	<h4 class="h4" id="monitor-apply">How to Apply</h4>
+    	<hr class="subsubtitle"/>
+    	<div>To apply I need you to give me three things:</div>
+        <div class="item">1. An <a href="#" class="link" title="Click here to get the application"> application </a>
+        </div>
+        <div class="item">2. A <a href="#" class="link" title="Example of Cover Letter"> cover letter </a></div>
+        <div class="last-item">3. A <a href="#" class="link" title="Example of Resume"> resume </a></div>
+    </div>
+
+    <h2 class="h2" id="clerk">Clerk</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <h4 class="h4" id="clerk-pay">Pay</h4>
+        <hr class="subsubtitle"/>
+    	<li class="last-item">As a clerk you will get paid $475 a week.</li>
+
+    	<h4 class="h4" id="clerk-description">Job Description</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">As a clerk you will be collecting and passing out papers. You will also be responsible for
+    	                    making sure that the materials are organized.</li>
+
+    	<h4 class="h4" id="clerk-skills">Skills Needed</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">Organized</li>
+
+    	<h4 class="h4" id="clerk-amount">How Many Are There</h4>
+    	<hr class="subsubtitle"/>
+    	<li class="last-item">There will be 2 clerks for every class period.</li>
+
+    	<h4 class="h4" id="clerk-apply">How to Apply</h4>
+    	<hr class="subsubtitle"/>
+    	<div>To apply I need you to give me three things:</div>
+        <div class="item">1. An <a href="#" class="link" title="Click here to get the application"> application </a>
+        </div>
+        <div class="item">2. A <a href="#" class="link" title="Example of Cover Letter"> cover letter </a></div>
+        <div class="last-item">3. A <a href="#" class="link" title="Example of Resume"> resume </a></div>
+    </div>
+{% endblock %}
+
+{% block sidenav %}
+    <li><a href="#pay" class="sidenav">How Pay Scale Works</a></li>
+    <li>
+        <a href="#janitor" class="sidenav">Janitor</a>
+        <ul class="nav">
+            <li><a class="child-sidenav" href="#janitor-pay">Janitor's Pay</a></li>
+            <li><a class="child-sidenav" href="#janitor-description">Janitor's Description</a></li>
+            <li><a class="child-sidenav" href="#janitor-skills">Janitor's Skills</a></li>
+            <li><a class="child-sidenav" href="#janitor-amount">How Many Janitors</a></li>
+            <li><a class="child-sidenav" href="#janitor-apply">How to Apply for Janitor</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#banker" class="sidenav">Banker</a>
+        <ul class="nav">
+            <li><a class="child-sidenav" href="#banker-pay">Banker's Pay</a></li>
+            <li><a class="child-sidenav" href="#banker-description">Banker's Description</a></li>
+            <li><a class="child-sidenav" href="#banker-skills">Banker's Skills</a></li>
+            <li><a class="child-sidenav" href="#banker-amount">How Many Bankers</a></li>
+            <li><a class="child-sidenav" href="#banker-apply">How to Apply for Banker</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#recycler" class="sidenav">Recycler</a>
+        <ul class="nav">
+            <li><a class="child-sidenav" href="#recycler-pay">Recycler's pay</a></li>
+            <li><a class="child-sidenav" href="#recycler-description">Recycler's Description</a></li>
+            <li><a class="child-sidenav" href="#recycler-skills">Recycler's Skills</a></li>
+            <li><a class="child-sidenav" href="#recycler-amount">How Many Recyclers</a></li>
+            <li><a class="child-sidenav" href="#recycler-apply">How to Apply for Recycler</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#police" class="sidenav">Police Officer</a>
+        <ul class="nav">
+            <li><a class="child-sidenav long" href="#police-pay">Police Officer's pay</a></li>
+            <li><a class="child-sidenav long" href="#police-description">Police Officer's Description</a></li>
+            <li><a class="child-sidenav long" href="#police-skills">Police Officer's Skills</a></li>
+            <li><a class="child-sidenav long" href="#police-amount">How Many Police Officers</a></li>
+            <li><a class="child-sidenav long" href="#police-apply">How to Apply for Police Officer</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#messenger" class="sidenav">Messenger</a>
+        <ul class="nav">
+            <li><a class="child-sidenav long" href="#messenger-pay">Messenger's pay</a></li>
+            <li><a class="child-sidenav long" href="#messenger-description">Messenger's Description</a></li>
+            <li><a class="child-sidenav long" href="#messenger-skills">Messenger's Skills</a></li>
+            <li><a class="child-sidenav long" href="#messenger-amount">How Many Messengers</a></li>
+            <li><a class="child-sidenav long" href="#messenger-apply">How to Apply for Messenger</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#monitor" class="sidenav">Attendance Monitor</a>
+        <ul class="nav">
+            <li><a class="child-sidenav long" href="#monitor-pay">Attendance monitor's pay</a></li>
+            <li><a class="child-sidenav long" href="#monitor-description">Attendance monitor's Description</a></li>
+            <li><a class="child-sidenav long" href="#monitor-skills">Attendance monitor's Skills</a></li>
+            <li><a class="child-sidenav long" href="#monitor-amount">How Many Attendance monitors</a></li>
+            <li><a class="child-sidenav long" href="#monitor-apply">How to Apply for Attendance monitor</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#clerk" class="sidenav">Clerk</a>
+        <ul class="nav">
+            <li><a class="child-sidenav" href="#clerk-pay">Clerk's pay</a></li>
+            <li><a class="child-sidenav" href="#clerk-description">Clerk's Description</a></li>
+            <li><a class="child-sidenav" href="#clerk-skills">Clerk's Skills</a></li>
+            <li><a class="child-sidenav" href="#clerk-amount">How Many Clerks</a></li>
+            <li><a class="child-sidenav" href="#clerk-apply">How to Apply for Clerk</a></li>
+        </ul>
+    </li>
+{% endblock %}

@@ -1,0 +1,99 @@
+{% extends 'layout_with_side_nav.html' %}
+
+{% block title %} Centers {% endblock %}
+
+{% block header %} Centers {% endblock %}
+
+{% block main %}
+    <h2 class="h2" id="about">What are Centers?</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="last-item">Centers are an interactive way for you to learn pieces of information on a particular
+                        topic and normally have learning materials to help enhance the education a you will receive.</div>
+    </div>
+
+    <h2 class="h2" id="rotation">Center Rotations</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="last-item">You will rotate in a clockwise pattern, this way it is consistent and as little confusion
+                        as possible for you. I do this just so that way every transition can be as smooth as possible.</div>
+        <img src="{{ url_for('static', filename='img/center_rotation.png') }}" />
+    </div>
+
+    <h2 class="h2" id="time">How Long Will I Be in a Center?</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="last-item">Since we have about 75 minutes per class we will have about 24 minutes per center so that way
+                        we have about 5 minutes left at the end of class to clean up and do our exit slip.</div>
+    </div>
+
+    <h2 class="h2" id="next">How Do I Know Where to Go Next?</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="last-item">So now you know how long you will be there, the rotation pattern of centers, well what if you
+                        forget? Well let us just say there will be arrows on the ground to remind you what direction
+                        to go. Also on each desk there will be a table that tells you the order to go.</div>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <td>Rotation 1</td>
+                    <td>Rotation 2</td>
+                    <td>Rotation 3</td>
+                    <td>Rotation 4</td>
+                    <td>Rotation 5</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="h2">How Do I Know When to Leave my Center?</h2>
+    <hr class="subtitle"/>
+    <div class="list-group">
+        <div class="item">On the projector there will be a timer that will go off whenever it is time to rotate groups.</div>
+    </div>
+{% endblock %}
+
+{% block sidenav %}
+    <li><a href="#about" class="sidenav">What are Centers</a></li>
+    <li><a href="#rotation" class="sidenav">Center Rotations</a></li>
+    <li><a href="#time" class="sidenav">How Long?</a></li>
+    <li><a href="#next" class="sidenav">Where Do I Go Next?</a></li>
+{% endblock %}
