@@ -104,8 +104,28 @@ def parents():
     return render_template('parents.html')
 
 
+@app.route('/classroom/classroom_layout')
+def classroom_layout():
+    return render_template('classroom_layout.html')
+
+
+@app.route('/classroom/classroom_door')
+def classroom_door():
+    return render_template('classroom_door.html')
+
+
+@app.route('/classroom/display_work')
+def display_work():
+    return render_template('display_work.html')
+
+
+@app.route('/classroom/teaching')
+def teaching():
+    return render_template('teaching.html')
+
+
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":
         freezer.freeze()
     else:
-        app.run()
+        app.run(debug=True)

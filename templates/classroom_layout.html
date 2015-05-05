@@ -1,0 +1,715 @@
+{% extends 'layout_without_side_nav.html' %}
+
+{% block link %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/tooltip.css') }}"/>
+
+	<style>
+        #door {
+	        top: -1%;
+	        left: 67%;
+        }
+
+        #book-shelf {
+	        top: -1%;
+	        left: 50%;
+        }
+
+	    #rotation-cards {
+	        top: 39%;
+	        left: 41%;
+        }
+
+        #paper-work {
+	        top: 5%;
+	        left: 30%;
+        }
+
+	    #guide-lines {
+		    top: 36%;
+		    left: 23%;
+	    }
+
+	    #folders {
+		    top: 22%;
+		    left: 75%;
+	    }
+
+	    #manipulatives {
+		    top: 81%;
+		    left: 30%;
+	    }
+
+	    #filing-cabinet {
+		    top: 1%;
+		    left: 36%;
+	    }
+
+	    #bulletin-board {
+		    top: 41%;
+		    left: 75%;
+	    }
+
+	    #tables {
+		    top: 20%;
+		    left: 38%;
+	    }
+
+	    #desk {
+		    top: 3%;
+		    left: 26%;
+	    }
+
+	    #white-board {
+		    top: 81%;
+		    left: 50%;
+	    }
+
+	    #reading-center {
+            top: 25%;
+		    left: 30%;
+	    }
+
+	    #student-area {
+		    top: 54%;
+		    left: 30%;
+	    }
+
+	    #door-extra, #book-shelf-extra, #rotation-cards-extra, #paper-work-extra, #guide-lines-extra, #folders-extra,
+	    #manipulatives-extra, #filing-cabinet-extra, #bulletin-board-extra, #tables-extra, #desk-extra, #white-board-extra,
+	    #student-area-extra, #reading-center-extra {
+	        display: none;
+        }
+
+	    .extras {
+	        border: solid medium #5cbddd;
+	        display: none;
+        }
+
+	    .title {
+		    padding: 5px;
+		    font-size: 11px;
+		    line-height: 18px;
+	    }
+	</style>
+{% endblock %}
+{% block title %}
+    Classroom Layout
+{% endblock %}
+
+{% block header %}
+    Classroom Layout
+{% endblock %}
+
+{% block main %}
+	<div class="col-sm-9 col-md-9">
+        <div class="list-group">
+            <div class="imagehotspot-container">
+                <img class="last-item" src="{{ url_for('static', filename='img/classroom_layout.png') }}" alt=""/>
+                <div id="desk" class="ihotspot"></div>
+                <div id="tables" class="ihotspot"></div>
+                <div id="bulletin-board" class="ihotspot"></div>
+                <div id="filing-cabinet" class="ihotspot"></div>
+                <div id="manipulatives" class="ihotspot"></div>
+                <div id="folders" class="ihotspot"></div>
+                <div id="guide-lines" class="ihotspot"></div>
+                <div id="paper-work" class="ihotspot"></div>
+                <div id="rotation-cards" class="ihotspot"></div>
+                <div id="book-shelf" class="ihotspot"></div>
+                <div id="door" class="ihotspot"></div>
+                <div id="white-board" class="ihotspot"></div>
+	            <div id="reading-center" class="ihotspot"></div>
+	            <div id="student-area" class="ihotspot"></div>
+            </div>
+         </div>
+	</div>
+
+	<div class="col-sm-3 col-md-3">
+		<div class="extras">
+			<div id="desk-extra">
+				As you walk in you will notice that my desk is organized and ready for that day and for new paperwork to
+				come in.
+			</div>
+
+			<div id="tables-extra">
+				As you walk in, the desks will be prepared for the day, if there are materials needed for the days activities
+				it will already be set up on the tables.
+			</div>
+
+			<div id="bulletin-board-extra">
+				The bulletin board will be prepared by having that months activities, if there are any field trips the dates
+				of them, and some motivational quotes so that way you can just feel good about yourself.
+			</div>
+
+			<div id="filing-cabinet-extra">
+				You will notice a clean filing cabinet that is alphabetized for each student.
+			</div>
+
+			<div id="manipulatives-extra">
+				Here you will find manipulatives for you to work with whenever we have recreation time so that way you can
+				work on other topics that you may be struggling in, or you may just want to get a refresher in. These will
+				be organized by topic, then alphabetized so that way it is easy to find.
+			</div>
+
+			<div id="folders-extra">
+				Every day you walk in these folders will be empty, so that way you know that I've already taken up that
+				days work and started to grade it.
+			</div>
+
+			<div id="guide-lines-extra">
+				The guide-lines will stay up the entire school year, but the motivational posters will periodically change
+				throughout the school year so that way you can get motivated for different things. I will try my best to
+				keep the posters relavent to what we are learning.
+			</div>
+
+            <div id="paper-work-extra">
+	            The paper work tray will be empty and filed every day during lunch or after school so that way only I, or
+	            the office, have the capability to see what the information is.
+            </div>
+
+            <div id="rotation-cards-extra">
+	            The rotation cards will laminated, and replaced whenever they need to be. This way they can stay legible,
+	            and also so that way you can feel like you are in a clean environment.
+            </div>
+
+            <div id="book-shelf-extra">
+	            These books will be organized by fiction or non-fiction and then by maturity level so that way you have
+	            easy access to the books that you are allowed to read and you don't have to keep questioning whether or not
+	            the book is appropriate for you.
+            </div>
+
+            <div id="door-extra">
+	            The door will be decorated so that way you can feel invited to the classroom every day. I will be sure to
+	            keep the door positive and, possibly, motivational.
+            </div>
+
+            <div id="white-board-extra">
+	            The white board will be wiped clean every class that they are used by our lovely janitors, so that way
+	            they are ready for the next class.
+            </div>
+
+			<div id="student-area-extra">
+				The student area will be clean and ready for students to go and learn at with the manipulatives at the
+				manipulative shelf.
+			</div>
+
+			<div id="reading-center-extra">
+				The reading area will be clean, clear of any books that students may have been using, and ready for student
+				to sit in some comfy chairs/bean bags and read a nice book.
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block script %}
+	<script src="{{ url_for('static', filename='bower_components/jquery/jquery-app-ui.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/tooltip.js') }}"></script>
+
+	<script>
+	    $(document).ready(function() {
+            $('.ihotspot').css({
+	            "border": "solid 1px #009900",
+                "background": "#14E71F",
+                "border-radius": "10px",
+                "width": "20px",
+                "height": "20px",
+                "z-index": "103",
+                "position": "absolute"
+            });
+
+		    function blink_hotspot() {
+                $('.ihotspot').animate({ "opacity": '0.3' }, 'slow')
+                        .animate({ 'opacity': '0.8' }, 'fast', function () {
+                            blink_hotspot();
+                        });
+            }
+
+            blink_hotspot();
+	    });
+
+	    var desk = $('#desk');
+	    var deskExtra = $('#desk-extra');
+	    var tables = $('#tables');
+	    var tablesExtra = $('#tables-extra');
+	    var bulletinBoard = $('#bulletin-board');
+	    var bulletinBoardExtra = $('#bulletin-board-extra');
+	    var filingCabinet = $('#filing-cabinet');
+	    var filingCabinetExtra = $('#filing-cabinet-extra');
+	    var manipulatives = $('#manipulatives');
+	    var manipulativesExtra = $('#manipulatives-extra');
+	    var folders = $('#folders');
+	    var foldersExtra = $('#folders-extra');
+	    var guideLines = $('#guide-lines');
+	    var guideLinesExtra = $('#guide-lines-extra');
+	    var paperWork = $('#paper-work');
+	    var paperWorkExtra = $('#paper-work-extra');
+	    var rotationCards = $('#rotation-cards');
+	    var rotationCardsExtra = $('#rotation-cards-extra');
+	    var bookShelf = $('#book-shelf');
+	    var bookShelfExtra = $('#book-shelf-extra');
+	    var door = $('#door');
+	    var doorExtra = $('#door-extra');
+	    var whiteBoard = $('#white-board');
+	    var whiteBoardExtra = $('#white-board-extra');
+	    var studentArea = $('#student-area');
+	    var studentAreaExtra = $('#student-area-extra');
+	    var readingCenter = $('#reading-center');
+	    var readingCenterExtra = $('#reading-center-extra');
+	    var extras = $('.extras');
+
+	    desk.LiteTooltip({
+		    location: "right",
+		    textalign: "left",
+		    templatename: "Spindle",
+		    padding: 5,
+		    title:
+				    '<div class="template">' +
+				    '<h4> The Desk </h4>' +
+				    '<p class="title">' +
+				    'Welcome to the desk. I, Mr. Burr, will be trying to spend as little time as possible at this spot.' +
+				    '</p>' +
+				    '</div>'
+	    });
+
+	    desk.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                deskExtra.css('display', 'block');
+		    }
+	    });
+
+	    tables.LiteTooltip({
+		    location: "right",
+		    textalign: "left",
+		    templatename: "Spindle",
+		    padding: 5,
+		    title:
+				    '<div class="template">' +
+				    '<h4> tables </h4>' +
+				    '<p class="title">' +
+				    'Welcome to the tables. We will be doing a lot of fun stuff here. Ranging from centers to group work ' +
+				    'even to some individual work. But I guarantee there will not be a dull moment there.' +
+				    '</p>' +
+				    '</div>'
+	    });
+
+	    tables.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                tablesExtra.css('display', 'block');
+		    }
+	    });
+
+	    bulletinBoard.LiteTooltip({
+		    location: "right",
+		    textalign: "left",
+		    templatename: "Spindle",
+		    padding: 5,
+		    title:
+				    '<div class="template">' +
+				    '<h4> Bulletin Board </h4>' +
+				    '<p class="title">' +
+				    'Welcome to the bulletin board. Here you will find information on upcoming things, whether it is within ' +
+				    'the school or within the classroom. You may even find some encouraging items on it.' +
+				    '</p>' +
+				    '</div>'
+	    });
+
+	    bulletinBoard.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                bulletinBoardExtra.css('display', 'block');
+		    }
+	    });
+
+	    filingCabinet.LiteTooltip({
+		    location: "right",
+		    textalign: "left",
+		    templatename: "Spindle",
+		    padding: 5,
+		    title:
+				    '<div class="template">' +
+				    '<h4> Filing Cabinet </h4>' +
+				    '<p class="title">' +
+				    'Welcome to the filing cabinet. Only I will be allowed within these drawers for all of your paper' +
+				    'work will be within the drawers. Don\'t worry, I will make sure that they are lockable so that way ' +
+				    'nobody can get in them.' +
+				    '</p>' +
+				    '<p class="title">' +
+				    'When I say paper work I mean personal paper work and any type of discipline/encouragement things ' +
+				    'that I hand to you and you have signed.' +
+				    '</p>' +
+				    '</div>'
+	    });
+
+	    filingCabinet.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                filingCabinetExtra.css('display', 'block');
+		    }
+	    });
+
+         manipulatives.LiteTooltip({
+                location: "right",
+                textalign: "left",
+                templatename: "Spindle",
+                padding: 5,
+                title:
+                        '<div class="template">' +
+                        '<h4> Manipulatives </h4>' +
+                        '<p class="title">' +
+                        'Welcome to the manipulatives. Here you will find any hands on material that you may need to help you ' +
+                        'learn about a particular topic that you are confused about. These will be fun, interactive' +
+                        'materials to learn with.' +
+                        '</p>' +
+                        '</div>'
+        });
+
+	    manipulatives.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                manipulativesExtra.css('display', 'block');
+		    }
+	    });
+
+        folders.LiteTooltip({
+                location: "right",
+                textalign: "left",
+                templatename: "Spindle",
+                padding: 5,
+                title:
+                        '<div class="template">' +
+                        '<h4> I Did Stuff Folders </h4>' +
+                        '<p class="title">' +
+                        'Welcome to the "I Did Stuff" folders. This is where the clerk will place your homework and classwork' +
+                        'inside of.' +
+                        '</p>' +
+                        '</div>'
+        });
+
+	    folders.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                foldersExtra.css('display', 'block');
+		    }
+	    });
+
+	    guideLines.LiteTooltip({
+                location: "right",
+                textalign: "left",
+                templatename: "Spindle",
+                padding: 5,
+                title:
+                        '<div class="template">' +
+                        '<h4> Guide Lines and Motivation </h4>' +
+                        '<p class="title">' +
+                        'Welcome to the guide lines and motivation board. Here you will find the guide lines that we follow  ' +
+                        'within the classroom. This is how you know we will be treating each other with respect and dignity' +
+                        'within and outside of these walls.' +
+                        '</p>' +
+                        '<p class="title">' +
+                        'You will also find motivational quotes around the guide lines that will help build the positive ' +
+                        'atmosphere that I know we will have.' +
+                        '</p>' +
+                        '</div>'
+        });
+
+	    guideLines.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                guideLinesExtra.css('display', 'block');
+		    }
+	    });
+
+	    paperWork.LiteTooltip({
+                location: "right",
+                textalign: "left",
+                templatename: "Spindle",
+                padding: 5,
+                title:
+                        '<div class="template">' +
+                        '<h4> Paper Work </h4>' +
+                        '<p class="title">' +
+                        'Welcome to the paper work part of my desk. Here you will find my positive/negative behavior binders, ' +
+                        'you will also be placing any kind of permission slips, notes from home, etc. here.' +
+                        '</p>' +
+                        '</div>'
+        });
+
+	    paperWork.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                paperWorkExtra.css('display', 'block');
+		    }
+	    });
+
+        rotationCards.LiteTooltip({
+                location: "right",
+                textalign: "left",
+                templatename: "Spindle",
+                padding: 5,
+                title:
+                        '<div class="template">' +
+                        '<h4> Rotation Cards </h4>' +
+                        '<p class="title">' +
+                        'Say "hello" to your rotation cards. These cards will help guide you where to go next when we are ' +
+                        'doing center rotations. These cards along with the arrows on the floor will hopefully minimize ' +
+                        'the confusion on where you should go next when doing rotations.' +
+                        '</p>' +
+                        '</div>'
+        });
+
+	    rotationCards.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                rotationCardsExtra.css('display', 'block');
+		    }
+	    });
+
+        bookShelf.LiteTooltip({
+                location: "right",
+                textalign: "left",
+                templatename: "Spindle",
+                padding: 5,
+                title:
+                        '<div class="template">' +
+                        '<h4> Book Shelf </h4>' +
+                        '<p class="title">' +
+                        'Welcome to the book shelf. Here you will find books that I will allow you to take home, as long' +
+                        'as you sign the "Time To Read" card so that way I know what book you took and who took it. ' +
+                        'I will also be comparing the book to the "What Can I Read" document I will have that your parents ' +
+                        'filled out so that way I know if you are allowed to read it.' +
+                        '</p>' +
+                        '</div>'
+        });
+
+	    bookShelf.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                bookShelfExtra.css('display', 'block');
+		    }
+	    });
+
+	    door.LiteTooltip({
+                location: "right",
+                textalign: "left",
+                templatename: "Spindle",
+                padding: 5,
+                title:
+                        '<div class="template">' +
+                        '<h4> The Door </h4>' +
+                        '<p class="title">' +
+                        'Say "hi" and "bye" to the door. This is where you will see Mr. Burr\'s smiling face every day ' +
+                        'at the start of class, and his sad face as you leave at the end of class. I am just so excited ' +
+                        'to have you there, and so sad to see you leave.' +
+                        '</p>' +
+                        '</div>'
+        });
+
+	    door.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                doorExtra.css('display', 'block');
+		    }
+	    });
+
+	    whiteBoard.LiteTooltip({
+                location: "right",
+                textalign: "left",
+                templatename: "Spindle",
+                padding: 5,
+                title:
+                        '<div class="template">' +
+                        '<h4> White Board </h4>' +
+                        '<p class="title">' +
+                        'Welcome to the white board. I will be spending as little time as possible up here also. I know ' +
+                        'what it is like to listen to a teacher drone on for an hour and you are day dreaming about whatever ' +
+                        'middle schoolers day dream about now.'+
+                        '</p>' +
+                        '<p class="title">' +
+                        'Just keep in mind I said that <u>I</u> will not be spending much time up here. I said nothing ' +
+                        'about you all. You will be helping me teach the class.' +
+                        '</p>' +
+                        '</div>'
+        });
+
+	    whiteBoard.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                whiteBoardExtra.css('display', 'block');
+		    }
+	    });
+
+	    studentArea.LiteTooltip({
+                location: "right",
+                textalign: "left",
+                templatename: "Spindle",
+                padding: 5,
+                title:
+                        '<div class="template">' +
+                        '<h4> Student Area </h4>' +
+                        '<p class="title">' +
+                        'The student area is a place for you to go to whenever you finish your work early and to work with ' +
+                        'the manipulatives that are available for you in an area that is difficult for you, or that you ' +
+                        'want to refresh on.' +
+                        '</p>' +
+                        '</div>'
+        });
+
+	    studentArea.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                studentAreaExtra.css('display', 'block');
+		    }
+	    });
+
+	    readingCenter.LiteTooltip({
+                location: "right",
+                textalign: "left",
+                templatename: "Spindle",
+                padding: 5,
+                title:
+                        '<div class="template">' +
+                        '<h4> Reading Center </h4>' +
+                        '<p class="title">' +
+                        'The reading center is a place for you to go if you finish your work early and you want to just ' +
+                        'read a nice book, or if you got a pass that says you can read for that class period.' +
+                        '</p>' +
+                        '</div>'
+        });
+
+	    readingCenter.on({
+		    click: function() {
+			    if(extras.css('display') == 'block') {
+				    $('.extras > div').each(function(index, element) {
+					    var div = $('#' + $(element).attr('id'));
+					    if(div.css('display') == 'block') {
+						    div.css('display', 'none');
+					    }
+				    })
+			    }
+
+                extras.css('display', 'block');
+                readingCenterExtra.css('display', 'block');
+		    }
+	    });
+
+
+	</script>
+{% endblock %}

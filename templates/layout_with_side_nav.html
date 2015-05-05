@@ -41,6 +41,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="{{ url_for('the_normal_day') }}">The Normal Day</a></li>
                                 <li><a href="{{ url_for('brain_sweat') }}">Brain Sweat</a></li>
+	                            <li><a href="{{ url_for('teaching') }}">The Teaching Method</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -79,6 +80,14 @@
                                 <li><a href="{{ url_for('recorded_behavior') }}">Recorded Behavior</a></li>
                                 <li><a href='{{ url_for('contract') }}'>Behavior Contract</a></li>
                                 <li><a href='{{ url_for('parents') }}'>Sharing with Parents</a></li>
+                            </ul>
+                        </li>
+	                    <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Classroom<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ url_for('classroom_layout') }}">The layout</a></li>
+	                            <li><a href="{{ url_for('classroom_door') }}">The Classroom Door</a></li>
+	                            <li><a href="{{ url_for('display_work') }}">Display Class Work</a></li>
                             </ul>
                         </li>
                     </ul>

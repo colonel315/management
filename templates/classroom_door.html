@@ -1,0 +1,239 @@
+{% extends 'layout_without_side_nav.html' %}
+
+{% block link %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/tooltip.css') }}"/>
+
+	<style>
+        #friend {
+            left: 49%;
+            top: 55%;
+        }
+
+        #bilbo {
+	        left: 48%;
+	        top: 10%
+        }
+
+        #door {
+	        left: 50%;
+	        top: 30%;
+        }
+
+        #friend-extra {
+	        display: none;
+        }
+
+        #bilbo-extra {
+	        display: none;
+        }
+
+        #door-extra {
+	        display: none;
+        }
+
+        .extras {
+	        border: solid medium #5cbddd;
+	        display: none;
+        }
+
+	    .title {
+		    padding: 5px;
+		    font-size: 11px;
+		    line-height: 18px;
+	    }
+    </style>
+{% endblock %}
+
+
+
+{% block title %}
+    The Classroom Door
+{% endblock %}
+
+{% block header %}
+    The Classroom Door
+{% endblock %}
+
+{% block main %}
+	<div class="col-sm-9 col-md-9">
+        <div class="list-group">
+            <div id="hotspot-image" class="imagehotspot-container">
+                <img src="{{ url_for('static', filename='img/door.png') }}" alt="" style="height: 30%; width: 30%;"/>
+                <div id="friend" class="ihotspot"></div>
+                <div id="bilbo" class="ihotspot"></div>
+                <div id="door" class="ihotspot"></div>
+            </div>
+        </div>
+	</div>
+
+	<div class="col-md-3 col-sm-3">
+        <div class="extras">
+            <div id="friend-extra">
+                <p>There will always be some kind of quote from the theme that the class and I choose from that displays
+                that the classroom is an open positive environment.</p>
+            </div>
+
+	        <div id="bilbo-extra">
+		        <p>Most of the themes we will be using will have characters that display unconditional affection towards
+                    their friends and they will be posted at the top of the door to remind the you what you should
+                    strive for.</p>
+		        <p>Bilbo also is a symbol for going out of your comfort zone, which in his case was to go on an
+		            adventure. Life is an adventure and sometimes you have to go out of your comfort zone.</p>
+	        </div>
+
+	        <div id="door-extra">
+		        <p>The door will change at least once a month to two months. You, the other students, and I will decide
+		            what the doors theme should be that month to two months. We will try out best to strive for themes
+		            that inspire us to do positive things. Whether it is something that has to do with going back to the
+		            earth (gardening), or a movie or a book that has inspired greatness in us.</p>
+	        </div>
+        </div>
+	</div>
+{% endblock %}
+
+{% block script %}
+	<script src="{{ url_for('static', filename='bower_components/jquery/jquery-app-ui.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/tooltip.js') }}"></script>
+
+	<script type="text/javascript">
+        $(document).ready(function() {
+            $('.ihotspot').css({
+                "border": "solid 1px #009900",
+                "background": "#00ffcc",
+                "border-radius": "10px",
+                "width": "20px",
+                "height": "20px",
+                "z-index": "103",
+                "position": "absolute"
+            });
+
+            function blink_hotspot() {
+                $('.ihotspot').animate({ "opacity": '0.3' }, 'slow')
+                        .animate({ 'opacity': '0.8' }, 'fast', function () {
+                            blink_hotspot();
+                        });
+            }
+
+            blink_hotspot();
+        });
+
+        var friend = $('#friend');
+        var bilbo = $('#bilbo');
+        var door = $('#door');
+        var friendExtra = $('#friend-extra');
+        var bilboExtra = $('#bilbo-extra');
+        var doorExtra = $('#door-extra');
+        var extras = $('.extras');
+
+        friend.LiteTooltip({
+            location: "right",
+            textalign: "left",
+            templatename: "BostonBlue",
+            padding: 5,
+            title:
+                    "<div class='template'>" +
+                    "<h4> The Quote </h4>" +
+                    "<p class='title'>" +
+                    "Promote positive environment by stating \"speak friend and enter.\" " +
+                    "This will help you to visually see that only positive attitudes are allowed" +
+                    "within the classroom. That you are now in a safe environment." +
+                    "</p>" +
+                    "</div>"
+        });
+
+        friend.on({
+	        click: function() {
+		        if(doorExtra.css('display') == 'block') {
+			        doorExtra.css('display', 'none');
+		        }
+
+		        if(bilboExtra.css('display') == 'block') {
+			        bilboExtra.css('display', 'none');
+		        }
+
+		        if(friendExtra.css('display') == "none") {
+			        extras.css('display', 'block');
+			        friendExtra.css('display', 'block');
+		        }
+		        else {
+			        extras.css('display', 'none');
+			        friendExtra.css('display', 'none');
+		        }
+	        }
+        });
+
+	    bilbo.LiteTooltip({
+            location: "right",
+            textalign: "left",
+            templatename: "BostonBlue",
+            padding: 5,
+            title:
+                    "<div class='template'>" +
+                    "<h4> Bilbo Baggins </h4>" +
+                    "<p class='title'>" +
+                    "Oh Bilbo Baggins, such a small creature in a large world and yet Gandalf chose you" +
+                    "to be the smuggler in The Hobbit because he believes that power does not ward off evil" +
+                    "but the smallest of acts of love and kindness do so." +
+                    "</p>" +
+                    "</div>"
+        });
+
+        bilbo.on({
+	        click: function() {
+		        if(doorExtra.css('display') == 'block') {
+			        doorExtra.css('display', 'none');
+		        }
+
+		        if(friendExtra.css('display') == 'block') {
+			        friendExtra.css('display', 'none');
+		        }
+
+		        if(bilboExtra.css('display') == "none") {
+			        extras.css('display', 'block');
+			        bilboExtra.css('display', 'block');
+		        }
+		        else {
+			        extras.css('display', 'none');
+			        bilboExtra.css('display', 'none');
+		        }
+	        }
+        });
+
+        door.LiteTooltip({
+            location: "right",
+            textalign: "left",
+            templatename: "BostonBlue",
+            padding: 5,
+            title:
+                    "<div class='template'>" +
+                    "<h4> Bilbo Baggins </h4>" +
+                    "<p class='title'>" +
+                    "The classroom door will hopefully one day symbolize a place of safety for you" +
+                    "as you are inside of my classroom. I want you to feel welcomed, loved, and safe" +
+                    "within my door." +
+                    "</p>" +
+                    "</div>"
+        });
+
+	    door.on({
+	        click: function() {
+		        if(friendExtra.css('display') == 'block') {
+			        friendExtra.css('display', 'none');
+		        }
+
+		        if(bilboExtra.css('display') == 'block') {
+			        bilboExtra.css('display', 'none');
+		        }
+
+		        if(doorExtra.css('display') == "none") {
+			        extras.css('display', 'block');
+			        doorExtra.css('display', 'block');
+		        }
+		        else {
+			        extras.css('display', 'none');
+			        doorExtra.css('display', 'none');
+		        }
+	        }
+        });
+    </script>
+{% endblock %}

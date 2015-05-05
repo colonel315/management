@@ -23,6 +23,13 @@ $(document).ready(function () {
                 "class": "event-important",
                 "start": new Date("April 09, 2015 11:59").getTime(),
                 "end": new Date("April 09, 2015 11:59").getTime()
+            },
+            {
+                "id": '294',
+                "title": "Classroom Management Plan 3 Due Today",
+                "class": "event-important",
+                "start": new Date("April 30, 2015 11:59").getTime(),
+                "end": new Date("April 30, 2015 11:59").getTime()
             }]
         },
 

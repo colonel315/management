@@ -8,10 +8,8 @@ body {
 
 .navbar-inverse .navbar-nav > li > a {
     font-size: small;
-}
-
-.navbar-inverse .navbar-nav > li > a {
     color: #fefefe;
+    margin-right: -1px;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {

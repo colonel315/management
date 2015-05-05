@@ -40,6 +40,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="{{ url_for('the_normal_day') }}">The Normal Day</a></li>
                                 <li><a href="{{ url_for('brain_sweat') }}">Brain Sweat</a></li>
+	                            <li><a href="{{ url_for('teaching') }}">The Teaching Method</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -80,6 +81,14 @@
                                 <li><a href='{{ url_for('parents') }}'>Sharing with Parents</a></li>
                             </ul>
                         </li>
+	                    <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Classroom<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ url_for('classroom_layout') }}">The layout</a></li>
+	                            <li><a href="{{ url_for('classroom_door') }}">The Classroom Door</a></li>
+	                            <li><a href="{{ url_for('display_work') }}">Displaying Your Work</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -93,10 +102,18 @@
                 </div>
             </div>
 
-            {% block buttons %}{% endblock %}
             <div class="row">
-                <div class="col-sm-9 col-md-9" role="main">
-                    <div id="calendar"></div>
+	            <div class="col-sm-3 col-md-3">
+		            <h4>What's new?</h4>
+	                <p>Check out the all new CLASSROOM TAB! Here you will find out about how my classroom is layed out,
+	                does Mr. Burr decorate his door? Do you get to show off some of your work out in the hallway? Find out
+	                by going there!</p>
+	                <p>Check out also under the "General Day" tab the all new Teaching Methods page! Learn the methods
+	                of this mad man!</p>
+	            </div>
+                <div class="col-sm-6 col-md-6" role="main">
+	                {% block buttons %}{% endblock %}
+                    <div id="calendar" style="margin-top: 22px;"></div>
                 </div>
                 <div class="col-sm-3 col-md-3" role="complementary">
                     <h4>Events</h4>

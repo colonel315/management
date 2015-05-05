@@ -1,0 +1,166 @@
+{% extends 'layout_without_side_nav.html' %}
+
+{% block link %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/tooltip.css') }}"/>
+
+	<style>
+	    #bulletin-board {
+		    top: 41%;
+		    left: 54%;
+	    }
+
+	    #student-work {
+		    top: 75%;
+		    left: 30%;
+	    }
+
+	    #bulletin-board-extra, #student-work-extra {
+		    display: none;
+	    }
+
+	    .extras {
+	        border: solid medium #5cbddd;
+	        display: none;
+        }
+
+	    .title {
+		    padding: 5px;
+		    font-size: 11px;
+		    line-height: 18px;
+	    }
+	</style>
+{% endblock %}
+
+{% block title %}
+    Classroom Work on Display
+{% endblock %}
+
+{% block header %}
+	Classroom Work on Display
+{% endblock %}
+
+{% block main %}
+	<div class="col-sm-9 col-md-9">
+		<div class="list-group">
+			<div class="imagehotspot-container">
+				<img src="{{ url_for('static', filename='img/class_work.jpg') }}" alt="" style="height: 50%; width: 50%;"/>
+				<div id="bulletin-board" class="ihotspot"></div>
+				<div id="student-work" class="ihotspot"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-sm-3 col-md-3">
+        <div class="extras">
+            <div id="bulletin-board-extra">
+	            This bulletin board will be in the hallway so that way the school can see the amazing work that you do.
+	            I will post your work here, only if you give me permission, without the grade on it so that way you know
+	            how amazing of a job you did..
+            </div>
+	        <div id="student-work-extra">
+		        I will ask you at some point in the school year to post your own work up on the bulletin board. If you say
+		        yes, which I know you will because you just love showing off your amazing work off, I will ask you to sign
+		        a form that allows me to hang it up.
+	        </div>
+        </div>
+	</div>
+{% endblock %}
+
+{% block script %}
+    <script src="{{ url_for('static', filename='bower_components/jquery/jquery-app-ui.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/tooltip.js') }}"></script>
+
+	<script type = 'text/javascript'>
+        $(document).ready(function() {
+            $('.ihotspot').css({
+	            "border": "solid 1px #009900",
+                "background": "#00ffcc",
+                "border-radius": "10px",
+                "width": "20px",
+                "height": "20px",
+                "z-index": "103",
+                "position": "absolute"
+            });
+
+		    function blink_hotspot() {
+                $('.ihotspot').animate({ "opacity": '0.3' }, 'slow')
+                        .animate({ 'opacity': '0.8' }, 'fast', function () {
+                            blink_hotspot();
+                        });
+            }
+
+            blink_hotspot();
+	    });
+
+        var bulletinBoard = $('#bulletin-board');
+	    var bulletinExtra = $('#bulletin-board-extra');
+	    var studentWork = $('#student-work');
+	    var studentExtra = $('#student-work-extra');
+        var extra = $('.extras');
+
+	    bulletinBoard.LiteTooltip({
+		   location: "left",
+		   textalign: "left",
+		   templatename: "BostonBlue",
+		   padding: 5,
+		   title:
+				   '<div class="template">' +
+				   '<h4">Outside Bulletin Board</h4>' +
+				   '<p class="title">' +
+				   'This is where I will put your work as long as you allow me to do so. It is completely up to you.' +
+				   '</p>' +
+				   '</div>'
+	    });
+
+	    bulletinBoard.on({
+		    click: function() {
+	            if(studentExtra.css('display') == 'block') {
+		            studentExtra.css('display', 'none');
+	            }
+
+			    if(bulletinExtra.css('display') == 'none') {
+				    extra.css('display', 'block');
+				    bulletinExtra.css('display', 'block');
+			    }
+			    else {
+				    extra.css('display', 'none');
+				    bulletinExtra.css('display', 'none');
+			    }
+            }
+	    });
+
+	    studentWork.LiteTooltip({
+		   location: "left",
+		   textalign: "left",
+		   templatename: "BostonBlue",
+		   padding: 5,
+		   title:
+				   '<div class="template">' +
+				   '<h4">Your Work on the Board</h4>' +
+				   '<p class="title">' +
+				   'I will not post your work unless you give me your permission. But I promise you I will make sure that' +
+				   'the board is appealing, and not just throw your work up there.' +
+				   '</p>' +
+				   '</div>'
+	    });
+
+	    studentWork.on({
+		    click: function() {
+	            if(bulletinExtra.css('display') == 'block') {
+		            bulletinExtra.css('display', 'none');
+	            }
+
+			    if(studentExtra.css('display') == 'none') {
+				    extra.css('display', 'block');
+				    studentExtra.css('display', 'block');
+			    }
+			    else {
+				    extra.css('display', 'none');
+				    studentExtra.css('display', 'none');
+			    }
+            }
+	    });
+
+
+	</script>
+{% endblock %}
